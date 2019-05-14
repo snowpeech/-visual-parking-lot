@@ -1,0 +1,21 @@
+#parking-lot{
+    position: absolute;
+    background-image: url('parkinglot.jpg');
+    background-size: cover;
+    width:800px;
+    height:599px;
+    z-index: -1;
+}
+
+.hSpace {
+    border: 1px dashed purple;
+    width: 119px;
+    height:62px;
+}
+
+.vSpace {
+    border: 1px dashed blue;
+    width: 62px;
+    height:119px;
+
+}
