@@ -17,5 +17,15 @@
     border: 1px dashed blue;
     width: 62px;
     height:119px;
+}
 
+.car {
+    position:absolute;
+    background-image: url('images/car-red.png');
+    background-size: cover;
+    height: 53px;
+    width: 106px;
+    top:626px;
+    left: 113px;
+    transform: rotate(270deg);
 }

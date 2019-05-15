@@ -10,66 +10,10 @@
     </head>
     <body>
         <div id = "parking-lot"> </div>
-
+        <div class="car"></div>
+        <div id = "lobby"></div>
         
-        <script>
-            var parkingLot = document.getElementById('parking-lot');
-            
-
-
-            createSpaces();
-
-            function createSpaces(){
-                var h;
-                var v;
-                var hTop = 9;
-                var hLeft = 7;   
-                var vTop = 11;
-                var vLeft = 242;
-
-                for(h = 0; h < 2; h++){
-                    for (let c=0; c<9; c++){
-
-                        var newDiv = document.createElement("div"); 
-                    
-                        newDiv.setAttribute("class","hSpace");
-                        newDiv.setAttribute("number",`num-${h}`);
-                        newDiv.setAttribute("style",`position:absolute; top: ${hTop}px; left:${hLeft}px;`);
-                        newDiv.innerText=`num-${c}-${h}`;
-                        parkingLot.appendChild(newDiv);
-                        hTop+=64;
-                    }
-                    hLeft+=660;
-                    console.log(hLeft);
-                    hTop = 9;                   
-                    
-                    // //right row
-                    // newDiv2.setAttribute("class","hSpace");
-                    // newDiv2.setAttribute("number",`num-${h+9}`);
-                    // newDiv2.setAttribute("style",`position:absolute; top: ${hTop}px; left:${hLeft+660}px;`);
-                    // newDiv2.innerText=`num-${h+9}`;
-                    // parkingLot.appendChild(newDiv2);
-
-                }
-
-                for (v=0; v<3;v++){
-                    for (let r =0; r<5; r++){
-
-                    var newDiv = document.createElement("div"); 
-
-                    newDiv.setAttribute("class","vSpace");
-                    newDiv.setAttribute("number",`num-${v}`);
-                    newDiv.setAttribute("style",`position:absolute; top: ${vTop}px; left:${vLeft}px;`);
-                    newDiv.innerText=`num-${r}-${v}`;
-                    parkingLot.appendChild(newDiv);
-
-                    vLeft+=64;
-                    }
-                    vTop+=225;
-                    vLeft = 242;
-                }
-                
-            }
-        </script>
+        <script type="text/javascript" src="parking.js"></script>
+        
     </body>
 </html>
